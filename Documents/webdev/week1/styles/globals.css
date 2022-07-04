@@ -1,0 +1,104 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", "sans-serif";
+}
+
+#container {
+    max-width: 700px; /* max-width instead of width for iphone compatibility */
+    padding: 0 16px;
+    margin: 0 auto; /*to center */
+}
+
+#prof-pic {
+    width: 200px;
+    height: 200px;
+    /*border-radius: 100px; to make it a circle, radius from each corner is set*/
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#top-section{
+    text-align: center;
+    margin: 64px;
+    background-image: url(/paper.gif);
+    background-size: cover;
+    
+    /* entire screen height is 100vh */ 
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+h1{
+    font-weight: 400px;
+}
+
+/* media query only applies when the font size is >600px */
+@media (min-width: 600px){
+    h1{
+        font-size:56px;
+        line-height: 72px;
+    }
+}
+
+p{
+    font-size: 24;
+    line-height: 40px;
+}
+
+hr{
+    margin: 56px 0;
+}
+
+.project-box{
+    /* for a class name, use a dot */
+    border: 1px solid #666;/* width, stroke pattern, color */
+    padding: 4px; 
+    border-radius: 16px;
+    margin-bottom: 32px;
+    background-color: #bbb;
+    width: 50%;
+    margin-right: 16px;
+}
+
+.project-box img{
+    width: 100%;
+
+}
+
+.project-box h2{
+    font-size: 32px;
+    margin-top: 32px;
+}
+
+.project-box p{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+
+.project-wrapper {
+    color: unset;
+    text-decoration: none;
+}
+
+/* use flexbox for links in a navbar */
+#navbar {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#flex-container{
+    display: flex;
+}
+
