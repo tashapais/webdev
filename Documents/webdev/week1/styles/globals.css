@@ -6,79 +6,74 @@ body {
 
 #container {
     max-width: 700px; /* max-width instead of width for iphone compatibility */
-    padding: 0 16px;
-    margin: 0 auto; /*to center */
+    background-image: url(/paper.gif);
+    background-size: contain; 
+    background-position: center center;
+    height: calc(100vh - 48px);
+    margin-top: 48px;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#on-lines-container {
+    max-width: 400px;
+    height: 0;
+    padding-top: 23%;
+    padding-left: 22%;
 }
 
 #prof-pic {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     /*border-radius: 100px; to make it a circle, radius from each corner is set*/
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
 }
 
-#top-section{
+#topright-section{
     text-align: center;
-    margin: 64px;
-    background-image: url(/paper.gif);
-    background-size: cover;
+    /* a smaller margin number creates a larger box for text */ 
+    font-size: 35px;
+    line-height: 40px;
     
-    /* entire screen height is 100vh */ 
-    height: 100vh;
-    padding:0;
-    margin:0;
+}
+
+#middle-section{
+    text-align: left;
+    font-size: 15px;
+    line-height: 20px; 
+    margin-left: 5px;
+    padding-top: 2px; 
+    height: 150px; 
+    position: relative;
+    
 }
 
 h1{
     font-weight: 400px;
-}
-
-/* media query only applies when the font size is >600px */
-@media (min-width: 600px){
-    h1{
-        font-size:56px;
-        line-height: 72px;
-    }
-}
-
-p{
-    font-size: 24;
-    line-height: 40px;
-}
-
-hr{
-    margin: 56px 0;
+    font-size:45px;
+    line-height: 72px;
 }
 
 .project-box{
     /* for a class name, use a dot */
-    border: 1px solid #666;/* width, stroke pattern, color */
-    padding: 4px; 
+    border: 5px solid #666;/* width, stroke pattern, color */
+    padding: 20px; 
     border-radius: 16px;
     margin-bottom: 32px;
-    background-color: #bbb;
-    width: 50%;
-    margin-right: 16px;
+    background-color: rgb(149, 167, 175);
+    width: 60%;
 }
 
 .project-box img{
     width: 100%;
-
-}
-
-.project-box h2{
-    font-size: 32px;
-    margin-top: 32px;
+    height: 100%; 
 }
 
 .project-box p{
-    font-size: 20px;
-    line-height: 32px;
-    margin-bottom: 0;
-    margin-top: 12px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .project-wrapper {
@@ -98,7 +93,17 @@ hr{
     left: 0;
 }
 
-#flex-container{
+#flex-container-top{
     display: flex;
+    align-items:center;
+}
+
+#flex-container-bottom{
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    padding-top: 40px; 
+    height: 100px; 
+    position: relative;
 }
 
