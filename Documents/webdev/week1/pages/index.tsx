@@ -32,7 +32,7 @@ export default function Index() {
                         <p>
                         Here are some projects I've finished. Please click.
                         </p>
-                    </div>
+                    </div>sounds
                     {/*to make images link, wrap the entire project-box in an a tag*/}
                     <div id="flex-container-bottom">
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="project-wrapper">
